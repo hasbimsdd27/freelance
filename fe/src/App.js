@@ -34,7 +34,7 @@ export default () => {
     if (type === "single") {
       newInput = currentInput.slice(0, -1);
     }
-    setState({ ...state, currentNum: newInput });
+    setState({ ...state, currentNum: newInput, resultNum: 0 });
   };
 
   return (
