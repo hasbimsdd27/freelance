@@ -1,0 +1,68 @@
+html {
+  font-size: 50px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.MainContainer {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.centeredItem {
+  display: flex;
+  padding: 20px;
+  border-radius: 20px;
+  width: 450px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CalculatorHead {
+  padding: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+.CalculatorHead div:first-child {
+  font-size: 36px;
+}
+.CalculatorHead div:last-child {
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+  grid-auto-rows: minmax(50px, auto);
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.grid .other {
+  padding: 10px 15px 10px 15px;
+  border-radius: 50%;
+  background-color: #9e9e9e;
+  text-align: center;
+  cursor: pointer;
+}
+.grid .operator {
+  padding: 10px 15px 10px 15px;
+  border-radius: 50%;
+  background-color: #e48800;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid .number {
+  padding: 10px 15px 10px 15px;
+  border-radius: 50%;
+  background-color: #171717;
+  text-align: center;
+  cursor: pointer;
+}
